@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\user\\onedrive\\documents\\code\\java\\humanresource\\humanresorce\\humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\user\\onedrive\\documents\\code\\java\\humanresource\\humanresorce\\humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\user\\onedrive\\documents\\code\\java\\humanresource\\humanresorce\\humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\user\\onedrive\\documents\\code\\java\\humanresource\\humanresorce\\humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\user\\onedrive\\documents\\code\\java\\humanresource\\humanresorce\\humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\user\\onedrive\\documents\\code\\java\\humanresource\\humanresorce\\humanresorce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,21 +38,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Director_MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\Director_MainForm.cs",
-              "RelativeDocumentMoniker": "HumanResorce\\Director_MainForm.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\Director_MainForm.cs",
-              "RelativeToolTip": "HumanResorce\\Director_MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T16:05:26.549Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -50,22 +49,12 @@
               "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\Director_MainForm.cs [Design]",
               "RelativeToolTip": "HumanResorce\\Director_MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T15:52:45.109Z"
+              "WhenOpened": "2025-06-10T15:52:45.109Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HR_MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\HR_MainForm.cs",
-              "RelativeDocumentMoniker": "HumanResorce\\HR_MainForm.cs",
-              "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\HR_MainForm.cs [Design]",
-              "RelativeToolTip": "HumanResorce\\HR_MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T15:52:22.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\MainForm.cs",
               "RelativeDocumentMoniker": "HumanResorce\\MainForm.cs",
@@ -74,6 +63,70 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T14:26:17.923Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HR_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\HR_MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\HR_MainForm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\HR_MainForm.cs [Design]",
+              "RelativeToolTip": "HumanResorce\\HR_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T15:52:22.887Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HR_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\HR_MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\HR_MainForm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\HR_MainForm.cs",
+              "RelativeToolTip": "HumanResorce\\HR_MainForm.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAkwJQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T16:22:03.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\MainForm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\MainForm.cs",
+              "RelativeToolTip": "HumanResorce\\MainForm.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv24AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T16:17:30.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\Program.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\Program.cs",
+              "RelativeToolTip": "HumanResorce\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T15:32:01.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Director_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\Director_MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\Director_MainForm.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\Documents\\Code\\Java\\HumanResource\\HumanResorce\\HumanResorce\\Director_MainForm.cs",
+              "RelativeToolTip": "HumanResorce\\Director_MainForm.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwLUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:05:26.549Z",
+              "EditorCaption": ""
             }
           ]
         }
