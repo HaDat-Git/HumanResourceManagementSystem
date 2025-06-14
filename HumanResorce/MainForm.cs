@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -174,7 +174,18 @@ namespace HumanResorce
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
+            // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
+            panelDesktop.Visible = true;
 
+            // Xóa các Control cũ trong Panel (nếu có)
+            panelDesktop.Controls.Clear();
+
+            // Khởi tạo Form đăng nhập
+            LoginControl login = new LoginControl();
+            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+
+            // Thêm vào Panel
+            panelDesktop.Controls.Add(login);
         }
     }
 }
