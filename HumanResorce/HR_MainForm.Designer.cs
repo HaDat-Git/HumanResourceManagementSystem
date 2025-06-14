@@ -33,7 +33,7 @@
             iconButton2 = new FontAwesome.Sharp.IconButton();
             btnSignOut = new FontAwesome.Sharp.IconButton();
             iconButton5 = new FontAwesome.Sharp.IconButton();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
+            btnAttendence = new FontAwesome.Sharp.IconButton();
             btnManageEmployee = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             btnMenu = new FontAwesome.Sharp.IconButton();
@@ -56,7 +56,7 @@
             panelMenu.Controls.Add(iconButton2);
             panelMenu.Controls.Add(btnSignOut);
             panelMenu.Controls.Add(iconButton5);
-            panelMenu.Controls.Add(iconButton4);
+            panelMenu.Controls.Add(btnAttendence);
             panelMenu.Controls.Add(btnManageEmployee);
             panelMenu.Controls.Add(panel1);
             panelMenu.Dock = DockStyle.Left;
@@ -134,28 +134,29 @@
             iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton5.UseVisualStyleBackColor = true;
             // 
-            // iconButton4
+            // btnAttendence
             // 
-            iconButton4.Dock = DockStyle.Top;
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.FlatStyle = FlatStyle.Flat;
-            iconButton4.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton4.ForeColor = Color.White;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.UserClock;
-            iconButton4.IconColor = Color.White;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 30;
-            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(0, 160);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Padding = new Padding(10, 0, 0, 0);
-            iconButton4.Size = new Size(230, 60);
-            iconButton4.TabIndex = 3;
-            iconButton4.Tag = "Daily Attendence";
-            iconButton4.Text = "Daily Attendence";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = true;
+            btnAttendence.Dock = DockStyle.Top;
+            btnAttendence.FlatAppearance.BorderSize = 0;
+            btnAttendence.FlatStyle = FlatStyle.Flat;
+            btnAttendence.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAttendence.ForeColor = Color.White;
+            btnAttendence.IconChar = FontAwesome.Sharp.IconChar.UserClock;
+            btnAttendence.IconColor = Color.White;
+            btnAttendence.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnAttendence.IconSize = 30;
+            btnAttendence.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAttendence.Location = new Point(0, 160);
+            btnAttendence.Name = "btnAttendence";
+            btnAttendence.Padding = new Padding(10, 0, 0, 0);
+            btnAttendence.Size = new Size(230, 60);
+            btnAttendence.TabIndex = 3;
+            btnAttendence.Tag = "Daily Attendence";
+            btnAttendence.Text = "Daily Attendence";
+            btnAttendence.TextAlign = ContentAlignment.MiddleLeft;
+            btnAttendence.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnAttendence.UseVisualStyleBackColor = true;
+            btnAttendence.Click += btnAttendence_Click;
             // 
             // btnManageEmployee
             // 
@@ -340,7 +341,7 @@
         private Panel panelDesktop;
         private FontAwesome.Sharp.IconButton btnMenu;
         private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton btnAttendence;
         private FontAwesome.Sharp.IconButton btnManageEmployee;
         private FontAwesome.Sharp.IconButton btnSignOut;
         private FontAwesome.Sharp.IconButton btnClose;

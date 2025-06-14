@@ -187,5 +187,21 @@ namespace HumanResorce
             // Thêm vào Panel
             panelDesktop.Controls.Add(login);
         }
+
+        private void btnAttendence_Click(object sender, EventArgs e)
+        {
+            // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
+            panelDesktop.Visible = true;
+
+            // Xóa các Control cũ trong Panel (nếu có)
+            panelDesktop.Controls.Clear();
+
+            // Khởi tạo Form đăng nhập
+            ManageAttendanceControl login = new ManageAttendanceControl();
+            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+
+            // Thêm vào Panel
+            panelDesktop.Controls.Add(login);
+        }
     }
 }

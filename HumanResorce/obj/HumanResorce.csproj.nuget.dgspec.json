@@ -53,6 +53,10 @@
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[6.6.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             }
           },
           "imports": [

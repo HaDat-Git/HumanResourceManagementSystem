@@ -42,14 +42,6 @@
             cbbGender = new ComboBox();
             cbbDepartment = new ComboBox();
             dgvEmployee = new DataGridView();
-            Name = new DataGridViewTextBoxColumn();
-            DOB = new DataGridViewTextBoxColumn();
-            Gender = new DataGridViewTextBoxColumn();
-            Position = new DataGridViewTextBoxColumn();
-            Email = new DataGridViewTextBoxColumn();
-            Phone = new DataGridViewTextBoxColumn();
-            StartDate = new DataGridViewTextBoxColumn();
-            Department = new DataGridViewTextBoxColumn();
             textBox5 = new TextBox();
             btnUpdate = new Button();
             btnDelete = new Button();
@@ -195,51 +187,11 @@
             // 
             dgvEmployee.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvEmployee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvEmployee.Columns.AddRange(new DataGridViewColumn[] { Name, DOB, Gender, Position, Email, Phone, StartDate, Department });
             dgvEmployee.Location = new Point(32, 233);
             dgvEmployee.Name = "dgvEmployee";
             dgvEmployee.Size = new Size(835, 182);
             dgvEmployee.TabIndex = 17;
-            // 
-            // Name
-            // 
-            Name.HeaderText = "Name";
-            Name.Name = "Name";
-            // 
-            // DOB
-            // 
-            DOB.HeaderText = "DOB";
-            DOB.Name = "DOB";
-            // 
-            // Gender
-            // 
-            Gender.HeaderText = "Gender";
-            Gender.Name = "Gender";
-            // 
-            // Position
-            // 
-            Position.HeaderText = "Position";
-            Position.Name = "Position";
-            // 
-            // Email
-            // 
-            Email.HeaderText = "Email";
-            Email.Name = "Email";
-            // 
-            // Phone
-            // 
-            Phone.HeaderText = "Phone";
-            Phone.Name = "Phone";
-            // 
-            // StartDate
-            // 
-            StartDate.HeaderText = "Start Date";
-            StartDate.Name = "StartDate";
-            // 
-            // Department
-            // 
-            Department.HeaderText = "Department";
-            Department.Name = "Department";
+            dgvEmployee.CellClick += dgvEmployee_CellClick;
             // 
             // textBox5
             // 
@@ -262,6 +214,7 @@
             btnUpdate.TabIndex = 19;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
@@ -272,6 +225,7 @@
             btnDelete.TabIndex = 20;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnAdd
             // 
@@ -282,6 +236,7 @@
             btnAdd.TabIndex = 21;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnClear
             // 
@@ -292,6 +247,7 @@
             btnClear.TabIndex = 22;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // txtPosition
             // 
@@ -372,14 +328,6 @@
         private ComboBox cbbGender;
         private ComboBox cbbDepartment;
         private DataGridView dgvEmployee;
-        private DataGridViewTextBoxColumn Name;
-        private DataGridViewTextBoxColumn DOB;
-        private DataGridViewTextBoxColumn Gender;
-        private DataGridViewTextBoxColumn Position;
-        private DataGridViewTextBoxColumn Email;
-        private DataGridViewTextBoxColumn Phone;
-        private DataGridViewTextBoxColumn StartDate;
-        private DataGridViewTextBoxColumn Department;
         private TextBox textBox5;
         private Button btnUpdate;
         private Button btnDelete;
