@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ACER NITRO 5\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj": {}
+    "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ACER NITRO 5\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj": {
+    "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER NITRO 5\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj",
+        "projectUniqueName": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj",
         "projectName": "HumanResorce",
-        "projectPath": "C:\\Users\\ACER NITRO 5\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj",
+        "projectPath": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem\\HumanResorce\\HumanResorce.csproj",
         "packagesPath": "C:\\Users\\ACER NITRO 5\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER NITRO 5\\HumanResourceManagementSystem\\HumanResorce\\obj\\",
+        "outputPath": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem\\HumanResorce\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
