@@ -172,6 +172,20 @@ namespace HumanResorce
             }
         }
 
+        private void HRMainForm_Load(object sender, EventArgs e)
+        {
+            LoadDashboard();
+        }
+
+        private void LoadDashboard()
+        {
+            panelDesktop.Controls.Clear(); // Xóa control hiện tại trong panel nếu có
+
+            DashBoardControl dashboard = new DashBoardControl();
+            dashboard.Dock = DockStyle.Fill; // Fill toàn bộ panel
+            panelDesktop.Controls.Add(dashboard);
+        }
+
         private void btnManageEmployee_Click(object sender, EventArgs e)
         {
             // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
@@ -198,6 +212,30 @@ namespace HumanResorce
 
             // Khởi tạo Form đăng nhập
             ManageAttendanceControl login = new ManageAttendanceControl();
+            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+
+            // Thêm vào Panel
+            panelDesktop.Controls.Add(login);
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+        }
+
+        private void btnDashBoard_Click(object sender, EventArgs e)
+        {
+            // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
+            panelDesktop.Visible = true;
+
+            // Xóa các Control cũ trong Panel (nếu có)
+            panelDesktop.Controls.Clear();
+
+            // Khởi tạo Form đăng nhập
+            DashBoardControl login = new DashBoardControl();
             login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
 
             // Thêm vào Panel

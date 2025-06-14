@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace HumanResorce
 {
@@ -44,7 +45,8 @@ namespace HumanResorce
                     e.startDate,
                     d.name AS DepartmentName
                 FROM Employee e
-                JOIN Department d ON e.departmentId = d.departmentId";
+                JOIN Department d ON e.departmentId = d.departmentId
+                ORDER BY d.name DESC";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -93,6 +95,8 @@ namespace HumanResorce
             {
                 MessageBox.Show("Lỗi khi tải danh sách nhân viên: " + ex.Message);
             }
+            dgvEmployee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
 
@@ -105,7 +109,7 @@ namespace HumanResorce
             cbbGender.Items.AddRange(new string[] { "Male", "Female", "Other" });
         }
 
-        private void dgvEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvEmployee_CellClick(object sender, DataGridViewCellEventArgs e)  
         {
             if (e.RowIndex >= 0)
             {
@@ -173,6 +177,11 @@ namespace HumanResorce
             string email = txtEmail.Text.Trim();
             string phone = txtPhone.Text.Trim();
             DateTime startDate = dtpStartDate.Value.Date;
+            if (startDate > DateTime.Today)
+            {
+                MessageBox.Show("Không thể thêm ngày bắt đầu lớn hơn ngày hiện tại.", "Lỗi ngày tháng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             string departmentName = cbbDepartment.SelectedItem.ToString();
 
             try

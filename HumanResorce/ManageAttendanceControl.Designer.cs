@@ -289,6 +289,7 @@
             txtID.Name = "txtID";
             txtID.Size = new Size(128, 16);
             txtID.TabIndex = 26;
+            txtID.Leave += txtID_Leave;
             // 
             // textBox3
             // 

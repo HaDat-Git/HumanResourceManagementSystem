@@ -23,7 +23,11 @@ namespace HumanResorce
         {
             InitializeComponent();
             cbbDepartment.SelectedIndexChanged += cbbDepartment_SelectedIndexChanged;
+            btnDelete.Click -= btnDelete_Click;
             btnDelete.Click += btnDelete_Click;
+            btnAdd.Click -= btnAdd_Click;
+            btnAdd.Click += btnAdd_Click;
+            txtID.Leave += txtID_Leave;
 
             this.Load += ManageAttendanceControl_Load;
         }
@@ -38,6 +42,12 @@ namespace HumanResorce
 
             dtpCheckOutTime.Format = DateTimePickerFormat.Time;
             dtpCheckOutTime.ShowUpDown = true;
+
+            // Đặt mặc định giờ check-in là 8:00 sáng
+            dtpCheckInTime.Value = DateTime.Today.AddHours(8);
+
+            // Đặt mặc định giờ check-out là 5:00 chiều
+            dtpCheckOutTime.Value = DateTime.Today.AddHours(17);
 
             dtpCheckInTime.ValueChanged += CalculateAttendanceStats;
             dtpCheckOutTime.ValueChanged += CalculateAttendanceStats;
@@ -59,11 +69,12 @@ namespace HumanResorce
                     a.date,
                     a.checkInTime,
                     a.checkOutTime,
-                    a.totalHours,
+                    ROUND(a.totalHours, 2) AS totalHours,
                     a.isLate,
                     a.lateMinutes
                 FROM Attendance a
-                JOIN Employee e ON a.employeeId = e.employeeId";
+                JOIN Employee e ON a.employeeId = e.employeeId
+                ORDER BY a.date DESC";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -75,7 +86,7 @@ namespace HumanResorce
                     if (dgvAttendance.Columns["attendanceId"] != null)
                         dgvAttendance.Columns["attendanceId"].Visible = false;
 
-                    dgvAttendance.Columns["EmployeeId"].HeaderText = "Employee ID"; 
+                    dgvAttendance.Columns["EmployeeId"].HeaderText = "Employee ID";
                     dgvAttendance.Columns["EmployeeName"].HeaderText = "Employee Name";
                     dgvAttendance.Columns["date"].HeaderText = "Date";
                     dgvAttendance.Columns["checkInTime"].HeaderText = "Check In";
@@ -133,17 +144,19 @@ namespace HumanResorce
                     string query = @"
                 SELECT 
                     a.attendanceId,
+                    e.employeeId,
                     e.name AS EmployeeName,
                     a.date,
                     a.checkInTime,
                     a.checkOutTime,
-                    a.totalHours,
+                    ROUND(a.totalHours, 2) AS totalHours,
                     a.isLate,
                     a.lateMinutes
                 FROM Attendance a
                 JOIN Employee e ON a.employeeId = e.employeeId
                 JOIN Department d ON e.departmentId = d.departmentId
-                WHERE d.name = @DepartmentName";
+                WHERE d.name = @DepartmentName
+                ORDER BY a.date DESC";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@DepartmentName", departmentName);
@@ -196,10 +209,10 @@ namespace HumanResorce
                     dtpDate.Value = date;
 
                 if (TimeSpan.TryParse(row.Cells["checkInTime"].Value?.ToString(), out TimeSpan checkIn))
-                    dtpCheckInTime.Value = DateTime.Today + checkIn;
+                    dtpCheckInTime.Value = DateTime.Today + new TimeSpan(checkIn.Hours, checkIn.Minutes, 0);
 
                 if (TimeSpan.TryParse(row.Cells["checkOutTime"].Value?.ToString(), out TimeSpan checkOut))
-                    dtpCheckOutTime.Value = DateTime.Today + checkOut;
+                    dtpCheckOutTime.Value = DateTime.Today + new TimeSpan(checkOut.Hours, checkOut.Minutes, 0);
 
                 txtTotalHour.Text = row.Cells["totalHours"].Value?.ToString();
 
@@ -215,8 +228,8 @@ namespace HumanResorce
 
         private void CalculateAttendanceStats(object sender, EventArgs e)
         {
-            TimeSpan checkIn = dtpCheckInTime.Value.TimeOfDay;
-            TimeSpan checkOut = dtpCheckOutTime.Value.TimeOfDay;
+            TimeSpan checkIn = new TimeSpan(dtpCheckInTime.Value.Hour, dtpCheckInTime.Value.Minute, 0);
+            TimeSpan checkOut = new TimeSpan(dtpCheckOutTime.Value.Hour, dtpCheckOutTime.Value.Minute, 0);
 
             // Tính tổng số giờ làm việc
             TimeSpan duration = checkOut - checkIn;
@@ -251,6 +264,30 @@ namespace HumanResorce
             }
         }
 
+        private void ClearFields()
+        {
+            txtID.Clear();
+            txtName.Clear();
+
+            // Đặt ngày về hôm nay
+            dtpDate.Value = DateTime.Today;
+
+            // Đặt giờ check-in là 08:00 sáng
+            dtpCheckInTime.Value = DateTime.Today.AddHours(8);
+
+            // Đặt giờ check-out là 17:00 (5 giờ chiều)
+            dtpCheckOutTime.Value = DateTime.Today.AddHours(17);
+
+            txtTotalHour.Text = "0";
+            txtLateMinute.Text = "0";
+
+            // Bỏ chọn cả hai checkbox
+            ckYes.Checked = false;
+            ckNo.Checked = false;
+
+            // Reset ID đang chọn
+            selectedAttendanceId = -1;
+        }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             if (selectedAttendanceId == -1)
@@ -259,14 +296,24 @@ namespace HumanResorce
                 return;
             }
 
-            // Kiểm tra nếu người dùng sửa tên nhân viên
-            //string selectedName = dgvAttendance.SelectedRows[0].Cells["EmployeeName"].Value.ToString();
-            //if (txtName.Text != selectedName)
-            //{
-            //    MessageBox.Show("Không thể sửa tên nhân viên trong mục chấm công.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    txtName.Text = selectedName; // Reset lại
-            //    return;
-            //}
+            if (dgvAttendance.CurrentRow != null)
+            {
+                string selectedName = dgvAttendance.CurrentRow.Cells["EmployeeName"].Value?.ToString();
+                if (txtName.Text != selectedName)
+                {
+                    MessageBox.Show("Không thể sửa tên nhân viên trong mục chấm công.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtName.Text = selectedName; // Reset lại
+                    return;
+                }
+            }
+
+            // Thêm kiểm tra ngày tại đây:
+            DateTime selectedDate = dtpDate.Value.Date;
+            if (selectedDate > DateTime.Today)
+            {
+                MessageBox.Show("Không thể cập nhật ngày chấm công lớn hơn ngày hiện tại.", "Lỗi ngày tháng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             try
             {
@@ -305,12 +352,14 @@ namespace HumanResorce
                         MessageBox.Show("Cập nhật thất bại.");
                     }
                 }
+                ClearFields(); // Xóa các trường sau khi cập nhật
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi cập nhật: " + ex.Message);
             }
         }
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -344,6 +393,7 @@ namespace HumanResorce
                         MessageBox.Show("Lỗi khi xóa dữ liệu: " + ex.Message);
                     }
                 }
+                ClearFields(); // Xóa các trường sau khi xóa
             }
             else
             {
@@ -353,7 +403,124 @@ namespace HumanResorce
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            int employeeId = int.TryParse(txtID.Text, out int id) ? id : -1;
+            if (employeeId == -1)
+            {
+                MessageBox.Show("Vui lòng nhập ID hợp lệ.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                MessageBox.Show("Vui lòng chọn hoặc nhập tên nhân viên.");
+                return;
+            }
 
+            string employeeName = txtName.Text.Trim();
+            DateTime date = dtpDate.Value.Date;
+            if (date > DateTime.Today)
+            {
+                MessageBox.Show("Ngày chấm công không thể lớn hơn ngày hiện tại.", "Lỗi ngày tháng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            TimeSpan checkInTime = dtpCheckInTime.Value.TimeOfDay;
+            TimeSpan checkOutTime = dtpCheckOutTime.Value.TimeOfDay;
+            float totalHours = float.TryParse(txtTotalHour.Text, out float h) ? h : 0;
+            bool isLate = ckYes.Checked;
+            int lateMinutes = int.TryParse(txtLateMinute.Text, out int lm) ? lm : 0;
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // Lấy employeeId từ tên
+                    string findIdQuery = "SELECT employeeId FROM Employee WHERE name = @name";
+                    SqlCommand findCmd = new SqlCommand(findIdQuery, conn);
+                    findCmd.Parameters.AddWithValue("@name", employeeName);
+                    object result = findCmd.ExecuteScalar();
+
+                    if (result == null)
+                    {
+                        MessageBox.Show("Không tìm thấy nhân viên có tên này.");
+                        return;
+                    }
+
+                    int empId = Convert.ToInt32(result);
+
+                    // Kiểm tra đã có chấm công ngày này chưa
+                    string checkQuery = "SELECT COUNT(*) FROM Attendance WHERE employeeId = @employeeId AND date = @date";
+                    SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
+                    checkCmd.Parameters.AddWithValue("@employeeId", empId);
+                    checkCmd.Parameters.AddWithValue("@date", date);
+
+                    int count = (int)checkCmd.ExecuteScalar();
+                    if (count > 0)
+                    {
+                        MessageBox.Show("Nhân viên này đã được chấm công trong ngày này.", "Trùng dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Nếu chưa có thì chèn bản ghi mới
+                    string insertQuery = @"
+                INSERT INTO Attendance (employeeId, date, checkInTime, checkOutTime, totalHours, isLate, lateMinutes)
+                VALUES (@employeeId, @date, @checkInTime, @checkOutTime, @totalHours, @isLate, @lateMinutes)";
+                    SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
+                    insertCmd.Parameters.AddWithValue("@employeeId", empId);
+                    insertCmd.Parameters.AddWithValue("@date", date);
+                    insertCmd.Parameters.AddWithValue("@checkInTime", checkInTime);
+                    insertCmd.Parameters.AddWithValue("@checkOutTime", checkOutTime);
+                    insertCmd.Parameters.AddWithValue("@totalHours", totalHours);
+                    insertCmd.Parameters.AddWithValue("@isLate", isLate);
+                    insertCmd.Parameters.AddWithValue("@lateMinutes", lateMinutes);
+
+                    insertCmd.ExecuteNonQuery();
+                    MessageBox.Show("Thêm chấm công thành công.");
+
+                    LoadAttendanceData(); // Refresh DataGridView
+                }
+                ClearFields(); // Xóa các trường sau khi thêm
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
+            }
+        }
+
+        private void txtID_Leave(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtID.Text.Trim(), out int employeeId))
+            {
+                try
+                {
+                    using (SqlConnection conn = new SqlConnection(connectionString))
+                    {
+                        conn.Open();
+                        string query = "SELECT name FROM Employee WHERE employeeId = @employeeId";
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@employeeId", employeeId);
+
+                        object result = cmd.ExecuteScalar();
+                        if (result != null)
+                        {
+                            txtName.Text = result.ToString();
+                        }
+                        else
+                        {
+                            txtName.Text = "";
+                            MessageBox.Show("Không tìm thấy nhân viên với ID này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi tìm tên nhân viên: " + ex.Message);
+                }
+            }
+            else
+            {
+                txtName.Text = "";
+            }
         }
     }
 }

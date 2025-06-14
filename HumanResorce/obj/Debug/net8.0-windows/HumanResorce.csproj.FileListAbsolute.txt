@@ -69,3 +69,4 @@ C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResor
 C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\obj\Debug\net8.0-windows\HumanResorce.ManageAttendanceControl.resources
+C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\obj\Debug\net8.0-windows\HumanResorce.DashBoardControl.resources

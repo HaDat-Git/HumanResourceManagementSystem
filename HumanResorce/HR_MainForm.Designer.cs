@@ -110,6 +110,7 @@
             btnSignOut.TextAlign = ContentAlignment.MiddleLeft;
             btnSignOut.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSignOut.UseVisualStyleBackColor = true;
+            btnSignOut.Click += btnSignOut_Click;
             // 
             // iconButton5
             // 
@@ -254,6 +255,7 @@
             btnDashBoard.TextAlign = ContentAlignment.MiddleLeft;
             btnDashBoard.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnDashBoard.UseVisualStyleBackColor = false;
+            btnDashBoard.Click += btnDashBoard_Click;
             // 
             // btnMinimize
             // 
@@ -324,6 +326,7 @@
             Controls.Add(panelMenu);
             Name = "HR_MainForm";
             Text = "HR_MainForm";
+            Load += HRMainForm_Load;
             Resize += HR_MainForm_Resize;
             panelMenu.ResumeLayout(false);
             panel1.ResumeLayout(false);
