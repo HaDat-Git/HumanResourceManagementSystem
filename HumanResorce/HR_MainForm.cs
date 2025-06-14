@@ -181,11 +181,11 @@ namespace HumanResorce
             panelDesktop.Controls.Clear();
 
             // Khởi tạo Form đăng nhập
-            ManageEmployeeControl login = new ManageEmployeeControl();
-            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+            ManageEmployeeControl manageEmployeeControl = new ManageEmployeeControl();
+            manageEmployeeControl.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
 
             // Thêm vào Panel
-            panelDesktop.Controls.Add(login);
+            panelDesktop.Controls.Add(manageEmployeeControl);
         }
     }
 }

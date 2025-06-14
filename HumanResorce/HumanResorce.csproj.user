@@ -13,5 +13,8 @@
     <Compile Update="ManageEmployeeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

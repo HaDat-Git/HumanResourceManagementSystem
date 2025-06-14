@@ -348,7 +348,7 @@
             Controls.Add(textBox4);
             Controls.Add(txtName);
             Controls.Add(textBox1);
-            Name = "ManageEmployeeControl";
+            //Name = "ManageEmployeeControl";
             Size = new Size(904, 501);
             Load += ManageEmployeeControl_Load;
             ((System.ComponentModel.ISupportInitialize)dgvEmployee).EndInit();
