@@ -165,11 +165,27 @@ namespace HumanResorce
                 btnMenu.Dock = DockStyle.None;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
-                    menuButton.Text = "        " + menuButton.Tag;
+                    menuButton.Text = "   " + menuButton.Tag;
                     menuButton.ImageAlign = ContentAlignment.MiddleLeft;
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
+        }
+
+        private void btnManageEmployee_Click(object sender, EventArgs e)
+        {
+            // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
+            panelDesktop.Visible = true;
+
+            // Xóa các Control cũ trong Panel (nếu có)
+            panelDesktop.Controls.Clear();
+
+            // Khởi tạo Form đăng nhập
+            ManageEmployeeControl login = new ManageEmployeeControl();
+            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+
+            // Thêm vào Panel
+            panelDesktop.Controls.Add(login);
         }
     }
 }

@@ -21,3 +21,4 @@ C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResor
 C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\obj\Debug\net8.0-windows\HumanResorce.pdb
 C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\obj\Debug\net8.0-windows\HumanResorce.genruntimeconfig.cache
 C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\obj\Debug\net8.0-windows\ref\HumanResorce.dll
+C:\Users\USER\OneDrive\Documents\Code\Java\HumanResource\HumanResorce\HumanResorce\obj\Debug\net8.0-windows\HumanResorce.ManageEmployeeControl.resources

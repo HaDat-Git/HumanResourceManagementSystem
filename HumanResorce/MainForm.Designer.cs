@@ -87,6 +87,7 @@
             btnSignIn.TextAlign = ContentAlignment.MiddleLeft;
             btnSignIn.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSignIn.UseVisualStyleBackColor = true;
+            btnSignIn.Click += btnSignIn_Click;
             // 
             // iconButton5
             // 
