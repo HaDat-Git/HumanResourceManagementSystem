@@ -185,6 +185,21 @@ namespace HumanResorce
             dashboard.Dock = DockStyle.Fill; // Fill toàn bộ panel
             panelDesktop.Controls.Add(dashboard);
         }
+        private void btnDashBoard_Click(object sender, EventArgs e)
+        {
+            // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
+            panelDesktop.Visible = true;
+
+            // Xóa các Control cũ trong Panel (nếu có)
+            panelDesktop.Controls.Clear();
+
+            // Khởi tạo Form đăng nhập
+            DashBoardControl login = new DashBoardControl();
+            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+
+            // Thêm vào Panel
+            panelDesktop.Controls.Add(login);
+        }
 
         private void btnManageEmployee_Click(object sender, EventArgs e)
         {
@@ -218,15 +233,7 @@ namespace HumanResorce
             panelDesktop.Controls.Add(login);
         }
 
-        private void btnSignOut_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-        }
-
-        private void btnDashBoard_Click(object sender, EventArgs e)
+        private void btnLeaveRequest_Click(object sender, EventArgs e)
         {
             // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
             panelDesktop.Visible = true;
@@ -235,7 +242,47 @@ namespace HumanResorce
             panelDesktop.Controls.Clear();
 
             // Khởi tạo Form đăng nhập
-            DashBoardControl login = new DashBoardControl();
+            LeaveRequestControl login = new LeaveRequestControl();
+            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+
+            // Thêm vào Panel
+            panelDesktop.Controls.Add(login);
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+        }
+
+        private void btnSalary_Click(object sender, EventArgs e)
+        {
+            // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
+            panelDesktop.Visible = true;
+
+            // Xóa các Control cũ trong Panel (nếu có)
+            panelDesktop.Controls.Clear();
+
+            // Khởi tạo Form đăng nhập
+            PaymentControl login = new PaymentControl();
+            login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
+
+            // Thêm vào Panel
+            panelDesktop.Controls.Add(login);
+        }
+
+        private void btnManageReport_Click(object sender, EventArgs e)
+        {
+            // Hiển thị Panel chứa giao diện đăng nhập/đăng ký
+            panelDesktop.Visible = true;
+
+            // Xóa các Control cũ trong Panel (nếu có)
+            panelDesktop.Controls.Clear();
+
+            // Khởi tạo Form đăng nhập
+            ReportControl login = new ReportControl();
             login.Dock = DockStyle.Fill; // Để căn chỉnh toàn Panel
 
             // Thêm vào Panel

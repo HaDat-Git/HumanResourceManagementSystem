@@ -204,6 +204,21 @@ namespace HumanResorce
 
                     int departmentId = Convert.ToInt32(result);
 
+                    // 🔍 Kiểm tra trùng email hoặc số điện thoại
+                    string checkDuplicateQuery = @"
+                    SELECT COUNT(*) FROM Employee 
+                    WHERE Email = @Email OR PhoneNumber = @Phone";
+                    SqlCommand checkCmd = new SqlCommand(checkDuplicateQuery, conn);
+                    checkCmd.Parameters.AddWithValue("@Email", email);
+                    checkCmd.Parameters.AddWithValue("@Phone", phone);
+                    int existingCount = (int)checkCmd.ExecuteScalar();
+
+                    if (existingCount > 0)
+                    {
+                        MessageBox.Show("Email hoặc số điện thoại đã tồn tại trong hệ thống.", "Trùng dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
                     // 4. Thêm nhân viên
                     string insertQuery = @"
                 INSERT INTO Employee (Name, DOB, Gender, Position, Email, PhoneNumber, StartDate, DepartmentID)

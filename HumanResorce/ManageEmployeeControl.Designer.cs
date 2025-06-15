@@ -148,10 +148,10 @@
             // 
             // textBox14
             // 
-            textBox14.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBox14.Anchor = AnchorStyles.Top;
             textBox14.BackColor = SystemColors.ActiveCaption;
             textBox14.BorderStyle = BorderStyle.None;
-            textBox14.Location = new Point(604, 207);
+            textBox14.Location = new Point(314, 159);
             textBox14.Name = "textBox14";
             textBox14.Size = new Size(68, 16);
             textBox14.TabIndex = 12;
@@ -176,11 +176,11 @@
             // 
             // cbbDepartment
             // 
-            cbbDepartment.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            cbbDepartment.Anchor = AnchorStyles.Top;
             cbbDepartment.FormattingEnabled = true;
-            cbbDepartment.Location = new Point(678, 204);
+            cbbDepartment.Location = new Point(408, 156);
             cbbDepartment.Name = "cbbDepartment";
-            cbbDepartment.Size = new Size(189, 23);
+            cbbDepartment.Size = new Size(176, 23);
             cbbDepartment.TabIndex = 16;
             // 
             // dgvEmployee

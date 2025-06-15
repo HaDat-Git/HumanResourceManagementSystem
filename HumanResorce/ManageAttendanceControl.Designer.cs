@@ -72,7 +72,7 @@
             txtName.BorderStyle = BorderStyle.None;
             txtName.Location = new Point(423, 59);
             txtName.Name = "txtName";
-            txtName.Size = new Size(124, 16);
+            txtName.Size = new Size(140, 16);
             txtName.TabIndex = 1;
             // 
             // textBox4
@@ -80,7 +80,7 @@
             textBox4.Anchor = AnchorStyles.Top;
             textBox4.BackColor = SystemColors.ActiveCaption;
             textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Location = new Point(605, 59);
+            textBox4.Location = new Point(48, 103);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(42, 16);
             textBox4.TabIndex = 2;
@@ -89,7 +89,7 @@
             // dtpDate
             // 
             dtpDate.Anchor = AnchorStyles.Top;
-            dtpDate.Location = new Point(674, 53);
+            dtpDate.Location = new Point(117, 97);
             dtpDate.Name = "dtpDate";
             dtpDate.Size = new Size(189, 23);
             dtpDate.TabIndex = 3;
@@ -99,7 +99,7 @@
             textBox5.Anchor = AnchorStyles.Top;
             textBox5.BackColor = SystemColors.ActiveCaption;
             textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Location = new Point(50, 140);
+            textBox5.Location = new Point(50, 143);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(42, 16);
             textBox5.TabIndex = 4;
@@ -109,7 +109,7 @@
             // 
             ckYes.Anchor = AnchorStyles.Top;
             ckYes.AutoSize = true;
-            ckYes.Location = new Point(151, 139);
+            ckYes.Location = new Point(150, 142);
             ckYes.Name = "ckYes";
             ckYes.Size = new Size(43, 19);
             ckYes.TabIndex = 5;
@@ -120,7 +120,7 @@
             // 
             ckNo.Anchor = AnchorStyles.Top;
             ckNo.AutoSize = true;
-            ckNo.Location = new Point(218, 140);
+            ckNo.Location = new Point(218, 142);
             ckNo.Name = "ckNo";
             ckNo.Size = new Size(42, 19);
             ckNo.TabIndex = 6;
@@ -133,7 +133,7 @@
             txtLateMinute.BorderStyle = BorderStyle.None;
             txtLateMinute.Location = new Point(423, 137);
             txtLateMinute.Name = "txtLateMinute";
-            txtLateMinute.Size = new Size(124, 16);
+            txtLateMinute.Size = new Size(140, 16);
             txtLateMinute.TabIndex = 8;
             // 
             // textBox6
@@ -141,7 +141,7 @@
             textBox6.Anchor = AnchorStyles.Top;
             textBox6.BackColor = SystemColors.ActiveCaption;
             textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Location = new Point(325, 137);
+            textBox6.Location = new Point(325, 141);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(72, 16);
             textBox6.TabIndex = 7;
@@ -152,7 +152,7 @@
             textBox7.Anchor = AnchorStyles.Top;
             textBox7.BackColor = SystemColors.ActiveCaption;
             textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Location = new Point(50, 102);
+            textBox7.Location = new Point(325, 102);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(83, 16);
             textBox7.TabIndex = 9;
@@ -163,7 +163,7 @@
             textBox8.Anchor = AnchorStyles.Top;
             textBox8.BackColor = SystemColors.ActiveCaption;
             textBox8.BorderStyle = BorderStyle.None;
-            textBox8.Location = new Point(325, 102);
+            textBox8.Location = new Point(605, 102);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(92, 16);
             textBox8.TabIndex = 10;
@@ -204,7 +204,7 @@
             // 
             txtTotalHour.Anchor = AnchorStyles.Top;
             txtTotalHour.BorderStyle = BorderStyle.None;
-            txtTotalHour.Location = new Point(674, 137);
+            txtTotalHour.Location = new Point(723, 142);
             txtTotalHour.Name = "txtTotalHour";
             txtTotalHour.Size = new Size(124, 16);
             txtTotalHour.TabIndex = 15;
@@ -214,7 +214,7 @@
             textBox11.Anchor = AnchorStyles.Top;
             textBox11.BackColor = SystemColors.ActiveCaption;
             textBox11.BorderStyle = BorderStyle.None;
-            textBox11.Location = new Point(605, 137);
+            textBox11.Location = new Point(605, 142);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(72, 16);
             textBox11.TabIndex = 14;
@@ -223,15 +223,15 @@
             // dtpCheckInTime
             // 
             dtpCheckInTime.Anchor = AnchorStyles.Top;
-            dtpCheckInTime.Location = new Point(144, 97);
+            dtpCheckInTime.Location = new Point(423, 97);
             dtpCheckInTime.Name = "dtpCheckInTime";
-            dtpCheckInTime.Size = new Size(128, 23);
+            dtpCheckInTime.Size = new Size(140, 23);
             dtpCheckInTime.TabIndex = 16;
             // 
             // dtpCheckOutTime
             // 
             dtpCheckOutTime.Anchor = AnchorStyles.Top;
-            dtpCheckOutTime.Location = new Point(423, 97);
+            dtpCheckOutTime.Location = new Point(723, 97);
             dtpCheckOutTime.Name = "dtpCheckOutTime";
             dtpCheckOutTime.Size = new Size(124, 23);
             dtpCheckOutTime.TabIndex = 17;
@@ -285,9 +285,9 @@
             // 
             txtID.Anchor = AnchorStyles.Top;
             txtID.BorderStyle = BorderStyle.None;
-            txtID.Location = new Point(144, 58);
+            txtID.Location = new Point(117, 58);
             txtID.Name = "txtID";
-            txtID.Size = new Size(128, 16);
+            txtID.Size = new Size(131, 16);
             txtID.TabIndex = 26;
             txtID.Leave += txtID_Leave;
             // 

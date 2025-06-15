@@ -64,12 +64,12 @@ GO
 CREATE TABLE LeaveRequest (
     requestId INT IDENTITY(1,1) PRIMARY KEY,
     employeeId INT NOT NULL,
-    reason VARCHAR(255),
+    reason NVARCHAR(255),
     startDate DATE NOT NULL,
     endDate DATE NOT NULL,
-    status VARCHAR(50),
+    status VARCHAR(50) DEFAULT 'Pending' CHECK (status IN ('Pending', 'Approved', 'Rejected')),
     isApproved BIT DEFAULT 0,
-    note VARCHAR(MAX),
+    note NVARCHAR(MAX),
     CONSTRAINT FK_LeaveRequest_Employee FOREIGN KEY (employeeId)
         REFERENCES Employee(employeeId)
 );
@@ -96,8 +96,10 @@ CREATE TABLE HumanResourceReport (
     generatedBy INT NOT NULL,
     generatedDate DATE NOT NULL,
     department VARCHAR(100),
+	month INT NOT NULL,
+    year INT NOT NULL,
     totalEmployees INT,
-    totalWorkHours FLOAT,
+    avgWorkHours FLOAT,
     avgSalary FLOAT,
     numOnLeave INT,
     CONSTRAINT FK_Report_User FOREIGN KEY (generatedBy)
@@ -166,6 +168,212 @@ VALUES
 UPDATE Department SET managerId = 1 WHERE departmentId = 1;
 UPDATE Department SET managerId = 6 WHERE departmentId = 2;
 UPDATE Department SET managerId = 11 WHERE departmentId = 3;
+
+-- === Ngày 12/06/2025 ===
+INSERT INTO Attendance (employeeId, date, checkInTime, checkOutTime, totalHours, isLate, lateMinutes)
+VALUES
+(1, '2025-06-12', '08:00', '17:00', 9, 0, 0),
+(2, '2025-06-12', '08:05', '17:00', 8.92, 1, 5),
+(3, '2025-06-12', '08:10', '17:10', 9, 1, 10),
+(4, '2025-06-12', '08:00', '17:00', 9, 0, 0),
+(5, '2025-06-12', '08:03', '17:00', 8.95, 1, 3),
+(6, '2025-06-12', '08:00', '17:00', 9, 0, 0),
+(7, '2025-06-12', '07:55', '17:00', 9.08, 0, 0),
+(8, '2025-06-12', '08:12', '17:00', 8.8, 1, 12),
+(9, '2025-06-12', '08:00', '17:00', 9, 0, 0),
+(10, '2025-06-12', '08:10', '17:10', 9, 1, 10),
+(11, '2025-06-12', '08:00', '17:00', 9, 0, 0),
+(12, '2025-06-12', '08:15', '17:00', 8.75, 1, 15),
+(13, '2025-06-12', '08:00', '17:00', 9, 0, 0),
+(14, '2025-06-12', '08:05', '17:05', 9, 1, 5),
+(15, '2025-06-12', '08:00', '17:00', 9, 0, 0);
+
+-- === Ngày 13/06/2025 ===
+INSERT INTO Attendance (employeeId, date, checkInTime, checkOutTime, totalHours, isLate, lateMinutes)
+VALUES
+(1, '2025-06-13', '08:10', '17:00', 8.83, 1, 10),
+(2, '2025-06-13', '08:00', '17:00', 9, 0, 0),
+(3, '2025-06-13', '08:03', '17:00', 8.95, 1, 3),
+(4, '2025-06-13', '08:00', '17:00', 9, 0, 0),
+(5, '2025-06-13', '08:15', '17:00', 8.75, 1, 15),
+(6, '2025-06-13', '08:00', '17:00', 9, 0, 0),
+(7, '2025-06-13', '08:05', '17:05', 9, 1, 5),
+(8, '2025-06-13', '08:00', '17:00', 9, 0, 0),
+(9, '2025-06-13', '08:18', '17:00', 8.7, 1, 18),
+(10, '2025-06-13', '08:00', '17:00', 9, 0, 0),
+(11, '2025-06-13', '08:00', '17:00', 9, 0, 0),
+(12, '2025-06-13', '08:02', '17:00', 8.97, 1, 2),
+(13, '2025-06-13', '08:10', '17:00', 8.83, 1, 10),
+(14, '2025-06-13', '08:00', '17:00', 9, 0, 0),
+(15, '2025-06-13', '08:00', '17:00', 9, 0, 0);
+
+-- === Ngày 14/06/2025 ===
+INSERT INTO Attendance (employeeId, date, checkInTime, checkOutTime, totalHours, isLate, lateMinutes)
+VALUES
+(1, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(2, '2025-06-14', '08:07', '17:00', 8.88, 1, 7),
+(3, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(4, '2025-06-14', '08:20', '17:00', 8.67, 1, 20),
+(5, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(6, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(7, '2025-06-14', '08:02', '17:00', 8.97, 1, 2),
+(8, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(9, '2025-06-14', '08:05', '17:00', 8.92, 1, 5),
+(10, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(11, '2025-06-14', '08:10', '17:00', 8.83, 1, 10),
+(12, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(13, '2025-06-14', '08:00', '17:00', 9, 0, 0),
+(14, '2025-06-14', '08:15', '17:00', 8.75, 1, 15),
+(15, '2025-06-14', '08:00', '17:00', 9, 0, 0);
+
+-- Nhân viên phòng Marketing: employeeId 1 (Lê Minh Tuấn), 2 (Phạm Thị Mai)
+INSERT INTO LeaveRequest (employeeId, reason, startDate, endDate, status, isApproved, note)
+VALUES 
+(1, N'Nghỉ phép cá nhân', '2025-06-01', '2025-06-3', N'Pending', 0, N'Cần về quê giải quyết việc gia đình'),
+(2, N'Nghỉ du lịch', '2025-06-02', '2025-06-5', N'Pending', 0, N'Du lịch cùng gia đình');
+
+-- Nhân viên phòng Finance: employeeId 6 (Nguyễn Văn Hưng), 7 (Trần Thị Hoa)
+INSERT INTO LeaveRequest (employeeId, reason, startDate, endDate, status, isApproved, note)
+VALUES 
+(6, N'Nghỉ khám bệnh', '2025-06-02', '2025-06-9', N'Pending', 0, N'Trong thời gian điều trị sức khỏe'),
+(7, N'Nghỉ phép cá nhân', '2025-06-01', '2025-06-1', N'Pending', 0, N'Có việc cá nhân đột xuất');
+
+-- Nhân viên phòng Sale: employeeId 11 (Vũ Đức Long), 12 (Lê Thị Hương)
+INSERT INTO LeaveRequest (employeeId, reason, startDate, endDate, status, isApproved, note)
+VALUES 
+(11, N'Nghỉ phép hàng năm', '2025-06-01', '2025-06-10', N'Pending', 0, N'Nghỉ phép theo kế hoạch'),
+(12, N'Nghỉ du lịch', '2025-06-01', '2025-06-3', N'Pending', 0, N'Tham gia tour du lịch');
+
+INSERT INTO Payroll (employeeId, month, year, totalHours, baseSalary, allowance, totalSalary)
+VALUES
+-- Marketing
+(1, 5, 2025, 160, 25, 200, 160 * 25 + 200),  -- 4200
+(2, 5, 2025, 158, 18, 150, 158 * 18 + 150),  -- 2944
+(3, 5, 2025, 162, 17, 120, 162 * 17 + 120),  -- 2894
+(4, 5, 2025, 160, 17.5, 130, 160 * 17.5 + 130),  -- 2910
+(5, 5, 2025, 155, 16, 100, 155 * 16 + 100),  -- 2580
+
+-- Finance
+(6, 5, 2025, 160, 27, 250, 160 * 27 + 250),  -- 4630
+(7, 5, 2025, 159, 18, 100, 159 * 18 + 100),  -- 2962
+(8, 5, 2025, 161, 19, 120, 161 * 19 + 120),  -- 3169
+(9, 5, 2025, 158, 17, 90, 158 * 17 + 90),  -- 2686
+(10, 5, 2025, 157, 17.5, 80, 157 * 17.5 + 80),  -- 2808
+
+-- Sale
+(11, 5, 2025, 160, 26, 300, 160 * 26 + 300),  -- 4500
+(12, 5, 2025, 160, 17, 100, 160 * 17 + 100),  -- 2820
+(13, 5, 2025, 160, 17.5, 110, 160 * 17.5 + 110),  -- 2910
+(14, 5, 2025, 158, 16.5, 95, 158 * 16.5 + 95),  -- 2702
+(15, 5, 2025, 159, 18, 120, 159 * 18 + 120);  -- 2922
+
+-- Tháng 1/2025
+INSERT INTO Payroll (employeeId, month, year, totalHours, baseSalary, allowance, totalSalary) VALUES
+-- Marketing
+(1, 1, 2025, 160, 25, 200, 160*25+200),
+(2, 1, 2025, 158, 18, 150, 158*18+150),
+(3, 1, 2025, 162, 17, 120, 162*17+120),
+(4, 1, 2025, 160, 17.5, 130, 160*17.5+130),
+(5, 1, 2025, 155, 16, 100, 155*16+100),
+
+-- Finance
+(6, 1, 2025, 160, 27, 250, 160*27+250),
+(7, 1, 2025, 159, 18, 100, 159*18+100),
+(8, 1, 2025, 161, 19, 120, 161*19+120),
+(9, 1, 2025, 158, 17, 90, 158*17+90),
+(10, 1, 2025, 157, 17.5, 80, 157*17.5+80),
+
+-- Sale
+(11, 1, 2025, 160, 26, 300, 160*26+300),
+(12, 1, 2025, 160, 17, 100, 160*17+100),
+(13, 1, 2025, 160, 17.5, 110, 160*17.5+110),
+(14, 1, 2025, 158, 16.5, 95, 158*16.5+95),
+(15, 1, 2025, 159, 18, 120, 159*18+120);
+
+-- Tháng 2/2025
+INSERT INTO Payroll (employeeId, month, year, totalHours, baseSalary, allowance, totalSalary) VALUES
+(1, 2, 2025, 155, 25, 180, 155*25+180),
+(2, 2, 2025, 154, 18, 160, 154*18+160),
+(3, 2, 2025, 156, 17, 140, 156*17+140),
+(4, 2, 2025, 155, 17.5, 150, 155*17.5+150),
+(5, 2, 2025, 152, 16, 110, 152*16+110),
+(6, 2, 2025, 155, 27, 270, 155*27+270),
+(7, 2, 2025, 153, 18, 110, 153*18+110),
+(8, 2, 2025, 154, 19, 130, 154*19+130),
+(9, 2, 2025, 153, 17, 100, 153*17+100),
+(10, 2, 2025, 150, 17.5, 90, 150*17.5+90),
+(11, 2, 2025, 156, 26, 310, 156*26+310),
+(12, 2, 2025, 155, 17, 105, 155*17+105),
+(13, 2, 2025, 157, 17.5, 120, 157*17.5+120),
+(14, 2, 2025, 154, 16.5, 100, 154*16.5+100),
+(15, 2, 2025, 153, 18, 130, 153*18+130);
+
+-- Tháng 3/2025
+INSERT INTO Payroll (employeeId, month, year, totalHours, baseSalary, allowance, totalSalary) VALUES
+(1, 3, 2025, 162, 25, 210, 162*25+210),
+(2, 3, 2025, 159, 18, 170, 159*18+170),
+(3, 3, 2025, 163, 17, 150, 163*17+150),
+(4, 3, 2025, 161, 17.5, 160, 161*17.5+160),
+(5, 3, 2025, 158, 16, 120, 158*16+120),
+(6, 3, 2025, 162, 27, 280, 162*27+280),
+(7, 3, 2025, 160, 18, 120, 160*18+120),
+(8, 3, 2025, 162, 19, 140, 162*19+140),
+(9, 3, 2025, 160, 17, 110, 160*17+110),
+(10, 3, 2025, 158, 17.5, 100, 158*17.5+100),
+(11, 3, 2025, 162, 26, 320, 162*26+320),
+(12, 3, 2025, 160, 17, 110, 160*17+110),
+(13, 3, 2025, 161, 17.5, 130, 161*17.5+130),
+(14, 3, 2025, 159, 16.5, 110, 159*16.5+110),
+(15, 3, 2025, 158, 18, 140, 158*18+140);
+
+-- Tháng 4/2025
+INSERT INTO Payroll (employeeId, month, year, totalHours, baseSalary, allowance, totalSalary) VALUES
+(1, 4, 2025, 163, 25, 220, 163*25+220),
+(2, 4, 2025, 160, 18, 180, 160*18+180),
+(3, 4, 2025, 164, 17, 160, 164*17+160),
+(4, 4, 2025, 162, 17.5, 170, 162*17.5+170),
+(5, 4, 2025, 160, 16, 130, 160*16+130),
+(6, 4, 2025, 163, 27, 290, 163*27+290),
+(7, 4, 2025, 161, 18, 130, 161*18+130),
+(8, 4, 2025, 163, 19, 150, 163*19+150),
+(9, 4, 2025, 161, 17, 120, 161*17+120),
+(10, 4, 2025, 159, 17.5, 110, 159*17.5+110),
+(11, 4, 2025, 163, 26, 330, 163*26+330),
+(12, 4, 2025, 161, 17, 115, 161*17+115),
+(13, 4, 2025, 162, 17.5, 135, 162*17.5+135),
+(14, 4, 2025, 160, 16.5, 115, 160*16.5+115),
+(15, 4, 2025, 161, 18, 150, 161*18+150);
+
+
+-- Tháng 1/2025
+INSERT INTO HumanResourceReport (generatedBy, generatedDate, department, month, year, totalEmployees, avgWorkHours, avgSalary, numOnLeave)
+VALUES
+(1, '2025-01-31', 'IT', 1, 2025, 10, 160, 3000, 2),
+(1, '2025-01-31', 'HR', 1, 2025, 5, 150, 2500, 1),
+(1, '2025-01-31', 'Finance', 1, 2025, 7, 170, 2800, 3);
+
+-- Tháng 2/2025
+INSERT INTO HumanResourceReport (generatedBy, generatedDate, department, month, year, totalEmployees, avgWorkHours, avgSalary, numOnLeave)
+VALUES
+(1, '2025-02-28', 'IT', 2, 2025, 10, 158, 3050, 1),
+(1, '2025-02-28', 'HR', 2, 2025, 5, 148, 2550, 0),
+(1, '2025-02-28', 'Finance', 2, 2025, 7, 165, 2820, 2);
+
+-- Tháng 3/2025
+INSERT INTO HumanResourceReport (generatedBy, generatedDate, department, month, year, totalEmployees, avgWorkHours, avgSalary, numOnLeave)
+VALUES
+(1, '2025-03-31', 'IT', 3, 2025, 10, 162, 3100, 3),
+(1, '2025-03-31', 'HR', 3, 2025, 5, 149, 2600, 1),
+(1, '2025-03-31', 'Finance', 3, 2025, 7, 168, 2850, 2);
+
+-- Tháng 4/2025
+INSERT INTO HumanResourceReport (generatedBy, generatedDate, department, month, year, totalEmployees, avgWorkHours, avgSalary, numOnLeave)
+VALUES
+(1, '2025-04-30', 'IT', 4, 2025, 10, 163, 3150, 2),
+(1, '2025-04-30', 'HR', 4, 2025, 5, 151, 2620, 0),
+(1, '2025-04-30', 'Finance', 4, 2025, 7, 169, 2880, 1);
+
+
 
 
 -- Xóa khóa ngoại FK_Employee_Department

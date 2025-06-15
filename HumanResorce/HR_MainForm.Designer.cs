@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HR_MainForm));
             panelMenu = new Panel();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
+            btnManageReport = new FontAwesome.Sharp.IconButton();
+            btnSalary = new FontAwesome.Sharp.IconButton();
             btnSignOut = new FontAwesome.Sharp.IconButton();
-            iconButton5 = new FontAwesome.Sharp.IconButton();
+            btnLeaveRequest = new FontAwesome.Sharp.IconButton();
             btnAttendence = new FontAwesome.Sharp.IconButton();
             btnManageEmployee = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
@@ -53,9 +54,10 @@
             // panelMenu
             // 
             panelMenu.BackColor = SystemColors.MenuHighlight;
-            panelMenu.Controls.Add(iconButton2);
+            panelMenu.Controls.Add(btnManageReport);
+            panelMenu.Controls.Add(btnSalary);
             panelMenu.Controls.Add(btnSignOut);
-            panelMenu.Controls.Add(iconButton5);
+            panelMenu.Controls.Add(btnLeaveRequest);
             panelMenu.Controls.Add(btnAttendence);
             panelMenu.Controls.Add(btnManageEmployee);
             panelMenu.Controls.Add(panel1);
@@ -65,28 +67,53 @@
             panelMenu.Size = new Size(230, 561);
             panelMenu.TabIndex = 0;
             // 
-            // iconButton2
+            // btnManageReport
             // 
-            iconButton2.Dock = DockStyle.Top;
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.FlatStyle = FlatStyle.Flat;
-            iconButton2.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton2.ForeColor = Color.White;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Poll;
-            iconButton2.IconColor = Color.White;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 30;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 280);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Padding = new Padding(10, 0, 0, 0);
-            iconButton2.Size = new Size(230, 60);
-            iconButton2.TabIndex = 6;
-            iconButton2.Tag = "Evaluate Performance";
-            iconButton2.Text = "Evaluate Performance";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = true;
+            btnManageReport.Dock = DockStyle.Top;
+            btnManageReport.FlatAppearance.BorderSize = 0;
+            btnManageReport.FlatStyle = FlatStyle.Flat;
+            btnManageReport.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnManageReport.ForeColor = Color.White;
+            btnManageReport.IconChar = FontAwesome.Sharp.IconChar.SheetPlastic;
+            btnManageReport.IconColor = Color.White;
+            btnManageReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnManageReport.IconSize = 30;
+            btnManageReport.ImageAlign = ContentAlignment.MiddleLeft;
+            btnManageReport.Location = new Point(0, 340);
+            btnManageReport.Name = "btnManageReport";
+            btnManageReport.Padding = new Padding(10, 0, 0, 0);
+            btnManageReport.Size = new Size(230, 60);
+            btnManageReport.TabIndex = 7;
+            btnManageReport.Tag = "HR Report";
+            btnManageReport.Text = "HR Report";
+            btnManageReport.TextAlign = ContentAlignment.MiddleLeft;
+            btnManageReport.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnManageReport.UseVisualStyleBackColor = true;
+            btnManageReport.Click += btnManageReport_Click;
+            // 
+            // btnSalary
+            // 
+            btnSalary.Dock = DockStyle.Top;
+            btnSalary.FlatAppearance.BorderSize = 0;
+            btnSalary.FlatStyle = FlatStyle.Flat;
+            btnSalary.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSalary.ForeColor = Color.White;
+            btnSalary.IconChar = FontAwesome.Sharp.IconChar.Poll;
+            btnSalary.IconColor = Color.White;
+            btnSalary.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnSalary.IconSize = 30;
+            btnSalary.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSalary.Location = new Point(0, 280);
+            btnSalary.Name = "btnSalary";
+            btnSalary.Padding = new Padding(10, 0, 0, 0);
+            btnSalary.Size = new Size(230, 60);
+            btnSalary.TabIndex = 6;
+            btnSalary.Tag = "Salary Payment";
+            btnSalary.Text = "Salary Payment";
+            btnSalary.TextAlign = ContentAlignment.MiddleLeft;
+            btnSalary.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSalary.UseVisualStyleBackColor = true;
+            btnSalary.Click += btnSalary_Click;
             // 
             // btnSignOut
             // 
@@ -112,28 +139,29 @@
             btnSignOut.UseVisualStyleBackColor = true;
             btnSignOut.Click += btnSignOut_Click;
             // 
-            // iconButton5
+            // btnLeaveRequest
             // 
-            iconButton5.Dock = DockStyle.Top;
-            iconButton5.FlatAppearance.BorderSize = 0;
-            iconButton5.FlatStyle = FlatStyle.Flat;
-            iconButton5.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iconButton5.ForeColor = Color.White;
-            iconButton5.IconChar = FontAwesome.Sharp.IconChar.BuildingUser;
-            iconButton5.IconColor = Color.White;
-            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton5.IconSize = 30;
-            iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton5.Location = new Point(0, 220);
-            iconButton5.Name = "iconButton5";
-            iconButton5.Padding = new Padding(10, 0, 0, 0);
-            iconButton5.Size = new Size(230, 60);
-            iconButton5.TabIndex = 4;
-            iconButton5.Tag = "Leave Request";
-            iconButton5.Text = "Leave Request";
-            iconButton5.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton5.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton5.UseVisualStyleBackColor = true;
+            btnLeaveRequest.Dock = DockStyle.Top;
+            btnLeaveRequest.FlatAppearance.BorderSize = 0;
+            btnLeaveRequest.FlatStyle = FlatStyle.Flat;
+            btnLeaveRequest.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLeaveRequest.ForeColor = Color.White;
+            btnLeaveRequest.IconChar = FontAwesome.Sharp.IconChar.BuildingUser;
+            btnLeaveRequest.IconColor = Color.White;
+            btnLeaveRequest.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnLeaveRequest.IconSize = 30;
+            btnLeaveRequest.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLeaveRequest.Location = new Point(0, 220);
+            btnLeaveRequest.Name = "btnLeaveRequest";
+            btnLeaveRequest.Padding = new Padding(10, 0, 0, 0);
+            btnLeaveRequest.Size = new Size(230, 60);
+            btnLeaveRequest.TabIndex = 4;
+            btnLeaveRequest.Tag = "Leave Request";
+            btnLeaveRequest.Text = "Leave Request";
+            btnLeaveRequest.TextAlign = ContentAlignment.MiddleLeft;
+            btnLeaveRequest.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLeaveRequest.UseVisualStyleBackColor = true;
+            btnLeaveRequest.Click += btnLeaveRequest_Click;
             // 
             // btnAttendence
             // 
@@ -343,7 +371,7 @@
         private PictureBox pictureBox1;
         private Panel panelDesktop;
         private FontAwesome.Sharp.IconButton btnMenu;
-        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton btnLeaveRequest;
         private FontAwesome.Sharp.IconButton btnAttendence;
         private FontAwesome.Sharp.IconButton btnManageEmployee;
         private FontAwesome.Sharp.IconButton btnSignOut;
@@ -351,6 +379,7 @@
         private FontAwesome.Sharp.IconButton btnMaximize;
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnDashBoard;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnSalary;
+        private FontAwesome.Sharp.IconButton btnManageReport;
     }
 }

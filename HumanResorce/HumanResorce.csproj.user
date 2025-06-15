@@ -10,6 +10,9 @@
     <Compile Update="HR_MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LeaveRequestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -17,6 +20,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ManageEmployeeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PaymentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ReportControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
