@@ -1,0 +1,345 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\splashform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\splashform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\splashform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\splashform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\humanresorce\\manageemployeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\manageemployeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER NITRO 5\\AppData\\Local\\Temp\\.vsdbgsrc\\648e6d82b486c5450343106eb9df95341f65d0ff\\ApplicationConfiguration.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\director_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\signin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\signin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\hr_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\hr_mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\hr_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\manageemployeecontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\manageemployeecontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|c:\\users\\acer nitro 5\\documents\\code for visual studio\\humanresourcemanagementsystem-mainform\\humanresorce\\manageemployeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F06E1D09-26B1-4053-AD45-4110D07AD926}|HumanResorce\\HumanResorce.csproj|solutionrelative:humanresorce\\manageemployeecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\MainForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\MainForm.cs [Design]",
+              "RelativeToolTip": "HumanResorce\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T14:26:17.923Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ManageEmployeeControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\ManageEmployeeControl.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\ManageEmployeeControl.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\ManageEmployeeControl.cs [Design]",
+              "RelativeToolTip": "HumanResorce\\ManageEmployeeControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T05:55:29.592Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignIn.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SignIn.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\SignIn.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SignIn.cs [Design]",
+              "RelativeToolTip": "HumanResorce\\SignIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:26:55.948Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Director_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\Director_MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\Director_MainForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\Director_MainForm.cs [Design]",
+              "RelativeToolTip": "HumanResorce\\Director_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:15:30.467Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HR_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\HR_MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\HR_MainForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\HR_MainForm.cs [Design]",
+              "RelativeToolTip": "HumanResorce\\HR_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:15:13.544Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\MainForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\MainForm.cs",
+              "RelativeToolTip": "HumanResorce\\MainForm.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAiwLIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T16:17:30.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\Program.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\Program.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\Program.cs",
+              "RelativeToolTip": "HumanResorce\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T15:32:01.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SplashForm.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SplashForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\SplashForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SplashForm.cs",
+              "RelativeToolTip": "HumanResorce\\SplashForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:57:24.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SplashForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SplashForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\SplashForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SplashForm.cs [Design]",
+              "RelativeToolTip": "HumanResorce\\SplashForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:57:12.192Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationConfiguration.g.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\AppData\\Local\\Temp\\.vsdbgsrc\\648e6d82b486c5450343106eb9df95341f65d0ff\\ApplicationConfiguration.g.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\648e6d82b486c5450343106eb9df95341f65d0ff\\ApplicationConfiguration.g.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\AppData\\Local\\Temp\\.vsdbgsrc\\648e6d82b486c5450343106eb9df95341f65d0ff\\ApplicationConfiguration.g.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\648e6d82b486c5450343106eb9df95341f65d0ff\\ApplicationConfiguration.g.cs [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T16:01:25.156Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Director_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\Director_MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\Director_MainForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\Director_MainForm.cs",
+              "RelativeToolTip": "HumanResorce\\Director_MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T16:05:26.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SignIn.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SignIn.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\SignIn.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SignIn.cs",
+              "RelativeToolTip": "HumanResorce\\SignIn.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwF0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:39:01.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SignIn.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SignIn.Designer.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\SignIn.Designer.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\SignIn.Designer.cs",
+              "RelativeToolTip": "HumanResorce\\SignIn.Designer.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAIAwwLYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T15:26:24.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HR_MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\HR_MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\HR_MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\HR_MainForm.Designer.cs",
+              "RelativeToolTip": "HumanResorce\\HR_MainForm.Designer.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAIAwwAkBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T05:55:42.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HR_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\HR_MainForm.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\HR_MainForm.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\HR_MainForm.cs",
+              "RelativeToolTip": "HumanResorce\\HR_MainForm.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAIAwwLwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T16:22:03.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAEoNAAAAAAAAAAApwGENAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-14T14:57:53.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ManageEmployeeControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\ManageEmployeeControl.Designer.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\ManageEmployeeControl.Designer.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\ManageEmployeeControl.Designer.cs",
+              "RelativeToolTip": "HumanResorce\\ManageEmployeeControl.Designer.cs",
+              "ViewState": "AgIAAEgBAAAAAAAAAIAwwF4BAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T06:50:57.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ManageEmployeeControl.cs",
+              "DocumentMoniker": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\ManageEmployeeControl.cs",
+              "RelativeDocumentMoniker": "HumanResorce\\ManageEmployeeControl.cs",
+              "ToolTip": "C:\\Users\\ACER NITRO 5\\Documents\\CODE FOR VISUAL STUDIO\\HumanResourceManagementSystem-MainForm\\HumanResorce\\ManageEmployeeControl.cs",
+              "RelativeToolTip": "HumanResorce\\ManageEmployeeControl.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T07:12:08.469Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 153,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 189,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
